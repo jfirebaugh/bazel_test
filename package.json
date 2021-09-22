@@ -1,0 +1,14 @@
+{
+    "name": "bazel_test",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@bazel/bazelisk": "latest",
+        "@bazel/buildifier": "latest",
+        "@bazel/ibazel": "latest"
+    },
+    "scripts": {
+        "build": "bazel build //...",
+        "test": "bazel test //..."
+    }
+}

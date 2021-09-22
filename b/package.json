@@ -1,0 +1,8 @@
+{
+  "name": "b",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@bazel/typescript": "^4.2.0"
+  }
+}
