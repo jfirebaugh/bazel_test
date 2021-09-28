@@ -1,9 +1,15 @@
 load("@npm//@bazel/typescript:index.bzl", "ts_project")
 
+genrule(
+    name = "generate",
+    outs = ["a.ts"],
+    cmd = "echo 'export const a = 1;' > $@",
+)
+
 ts_project(
     name = "a",
     composite = True,
     tsconfig = "tsconfig.json",
-    srcs = ["a.ts"],
+    srcs = [":a.ts"],
     visibility = ["//visibility:public"],
 )
