@@ -1,3 +1,9 @@
-exports_files([
-    "a.ts"
-])
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
+
+ts_project(
+    name = "a",
+    composite = True,
+    tsconfig = "tsconfig.json",
+    srcs = ["a.ts"],
+    visibility = ["//visibility:public"],
+)

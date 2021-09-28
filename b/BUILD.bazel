@@ -1,7 +1,8 @@
-load("@b.npm//@bazel/typescript:index.bzl", "ts_project")
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
 
 ts_project(
     name = "b",
     tsconfig = "tsconfig.json",
-    srcs = ["b.ts", "//a:a.ts"],
+    srcs = ["b.ts"],
+    deps = ["//a"]
 )
