@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
-    "composite": true
+    "composite": true,
+    "rootDirs": [
+      ".",
+      "../bazel-out/host/bin/a",
+      "../bazel-out/darwin-fastbuild/bin/a",
+      "../bazel-out/k8-fastbuild/bin/a",
+      "../bazel-out/x64_windows-fastbuild/bin/a",
+      "../bazel-out/darwin-dbg/bin/a",
+      "../bazel-out/k8-dbg/bin/a",
+      "../bazel-out/x64_windows-dbg/bin/a"]
   }
 }
